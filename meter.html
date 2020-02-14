@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem Meter</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Hard projects constantly move on this meter">
+        <style>
+            @keyframes rotation {
+                0% {transform: rotate(-90deg)}
+                5% {transform: rotate(-90deg)}
+                25% {transform: rotate(0deg)}
+                45% {transform: rotate(90deg)}
+                50% {transform: rotate(90deg)}
+                55% {transform: rotate(90deg)}
+                75% {transform: rotate(0deg)}
+                95% {transform: rotate(-90deg)}
+                100% {transform: rotate(-90deg)}
+            }
+            body {
+                text-align: center;
+            }
+            .label {
+                display: inline-block;
+                box-sizing: border-box;
+                font-size: 3em;
+                width: 10em;
+            }
+            .meter {
+                display: inline-block;
+                font-size: 3em;
+                transform: rotate(-80deg);
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-name: rotation;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The Problem Meter</h1>
+        <p>
+            <span class="label" style="text-align: right;">This is easy</span>
+            <span class="meter">⬆</span>
+            <span class="label" style="text-align: left;">This is impossible</span>
+        </p>
+        <p>
+            Hard problems vacillate between easy and impossible.
+        </p>
+    </body>
+</html>
